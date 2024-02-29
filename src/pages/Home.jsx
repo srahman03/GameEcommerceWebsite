@@ -3,7 +3,7 @@ import './header.css'
 import GameSwiper from '../components/GameSwiper'
 function Home({games}) {
   return (
-  <section id="home" className='home'>
+  <section id="home" className='home active'>
     <div className="container-fluid">
       <div className="row">
         <GameSwiper games={games}/>
