@@ -108,14 +108,17 @@
     display: block;
 }
 .playBtn .pause{
-    display:none;
+    display:block;
 }
+
+/*
 .swiper-slide.swiper-slide-active .playBtn.active .play{
     display:none;
 }
 .swiper-slide.swiper-slide-active .playBtn.active .pause{
     display: block;
 }
+*/
 .swiper-slide .video iframe { 
     position: absolute;
     right: 0;

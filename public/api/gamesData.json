@@ -1,15 +1,15 @@
 [
     {
       "_id": 1,
-      "title": "League of Legends",
-      "description": "League of Legends is a widely-played multiplayer online battle arena (MOBA) game where players control unique champions in team-based battles for victory.",
+      "title": "Borderlands",
+      "description": "Borderlands is a fast-paced, humorous first-person shooter set in a post-apocalyptic sci-fi world with cooperative multiplayer gameplay.",
       "level": "Median",
-      "category": "MOBA",
-      "rating": 3,
+      "category": "Action",
+      "rating": 5,
       "discount": 0.5,
       "price": 79.0,
-      "img": "./assets/games/lol-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/vzHrjOMfHPY",
+      "img": "./assets/games/borderlands-bg.jpg",
+      "trailer": "./assets/gamesVideo/borderlands.mp4",
       "active": true
     },
     {
@@ -22,7 +22,7 @@
       "discount": 0.3,
       "price": 52.56,
       "img": "./assets/games/mario-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/tKlRN2YpxRE",
+      "trailer": "./assets/gamesVideo/mario.mp4",
       "active": false
     },
   
@@ -36,7 +36,7 @@
       "discount": 0.3,
       "price": 85.0,
       "img": "./assets/games/dota-2-bg.jpg",
-      "trailer": "https://www.youtube.com/embed/-cSFPIwMEq4",
+      "trailer": "./assets/gamesVideo/dota2.mp4",
       "active": false
     },
     {
@@ -49,21 +49,21 @@
       "discount": 0.2,
       "price": 65.6,
       "img": "./assets/games/king-of-fighters-xv.jpeg",
-      "trailer": "https://www.youtube.com/embed/_o7Ip64-Sio",
+      "trailer": "./assets/gamesVideo/fighters.mp4",
       "active": false
     },
   
     {
       "_id": 5,
-      "title": "Forza Horizon 5",
-      "description": "Forza Horizon 5 is a popular open-world racing game featuring stunning graphics, a vast map, and a diverse range of cars to race and customize.",
+      "title": "Project Zomboid",
+      "description": "Project Zomboid is a survival horror video game featuring isometric graphics and a focus on survival mechanics set in a zombie apocalypse.",
       "level": "High",
-      "category": "Racing",
-      "rating": 4,
+      "category": "Survival",
+      "rating": 5,
       "discount": 0,
       "price": 129.0,
-      "img": "./assets/games/forza-horizon-5-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw",
+      "img": "./assets/games/zomboid-bg.jpg",
+      "trailer": "./assets/gamesVideo/zomboid.mp4",
       "active": false
     },
     {
@@ -72,11 +72,11 @@
       "description": "Halo Infinite is an anticipated first-person shooter game known for its iconic sci-fi universe, intense multiplayer battles, and engaging storyline.",
       "level": "Median",
       "category": "Battle",
-      "rating": 4,
+      "rating": 3,
       "discount": 0,
       "price": 85.8,
       "img": "./assets/games/halo-infinite-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/PyMlV5_HRWk",
+      "trailer": "./assets/gamesVideo/halo-infinite.mp4",
       "active": false
     },
     {
@@ -89,7 +89,7 @@
       "discount": 0.6,
       "price": 69.0,
       "img": "./assets/games/fortnite-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/7bq0Boq2B3Y",
+      "trailer": "./assets/gamesVideo/fortnite.mp4",
       "active": false
     },
     {
@@ -102,7 +102,7 @@
       "discount": 0.5,
       "price": 99.0,
       "img": "./assets/games/diablo-3-bg.jpeg",
-      "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
+      "trailer": "./assets/gamesVideo/diablo.mp4",
       "active": false
     }
   ]
