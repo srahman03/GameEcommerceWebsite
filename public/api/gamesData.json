@@ -107,8 +107,8 @@
     },
     {
       "_id": 9,
-      "title": "Counter-Strike: Global Offensive",
-      "description": "Counter-Strike: Global Offensive (CS:GO) is a popular multiplayer first-person shooter game. It features intense team-based gameplay, where players can choose to be terrorists or counter-terrorists. With a wide range of weapons, maps, and game modes, CS:GO offers thrilling competitive matches and strategic gameplay.",
+      "title": "CSGO",
+      "description": "Counter-Strike: Global Offensive (CS:GO) is a popular multiplayer first-person shooter game. It features intense team-based gameplay, where players can choose to be terrorists or counter-terrorists.",
       "level": "Intermediate",
       "category": "First-Person Shooter",
       "rating": 4,
