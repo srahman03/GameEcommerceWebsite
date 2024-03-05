@@ -10,7 +10,7 @@ const filterListData = [
         active: false,
     },
     {
-        id: 3,
+        _id: 3,
         name: 'MOBA',
         active: false,
     },
