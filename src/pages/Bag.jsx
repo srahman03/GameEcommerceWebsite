@@ -1,21 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import './bag.css'
-import ShopBagItem from '../components/ShopBagItem'
+import React, { useState, useEffect, useContext } from 'react';
+import './bag.css';
+import ShopBagItem from '../components/ShopBagItem';
+import { AppContext } from '../App';
 
-function Bag({ games, reference }) {
-  const[total, setTotal] = useState(0);
+function Bag({ reference }) {
+  const { bag, setBag } = useContext(AppContext); // Import AppContext
 
-  const handleTotalPayment = ()=>{
-    return games
-    .map(game=> game.price * (1-game.discount))
-    .reduce((accumulator, currentValue)=>accumulator + currentValue, 0)
-    .toFixed(2)
+  const [total, setTotal] = useState(0);
+
+  const handleTotalPayment = () => {
+    return bag
+      .map(game => game.price * (1 - game.discount))
+      .reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+      .toFixed(2);
   };
 
-  useEffect(()=>{
-    setTotal(handleTotalPayment())
-  },[games]);
-  
+  useEffect(() => {
+    setTotal(handleTotalPayment());
+  }, [bag]);
+
+  useEffect(() => {
+    const storedBag = JSON.parse(localStorage.getItem('bag'));
+    if (storedBag) {
+      setBag(storedBag);
+    }
+  }, [setBag]); // Add setBag to dependency array
 
   return (
     <section id="bag" className='bag' ref={reference}>
@@ -25,7 +34,7 @@ function Bag({ games, reference }) {
         </div>
       </div>
       {
-        games.length === 0 ? (
+        bag.length === 0 ? (
           <h2>Your bag is empty</h2>
         ) :
           (
@@ -45,7 +54,7 @@ function Bag({ games, reference }) {
                       </tr>
                     </thead>
                     <tbody>
-                      {games.map((game, index) => (
+                      {bag.map((game, index) => (
                         <ShopBagItem index={index} key={game._id} game={game} />
                       ))}
                     </tbody>
@@ -55,7 +64,7 @@ function Bag({ games, reference }) {
               </div>
               <div className="row d-flex justify-content-between mt-5">
                 <div className="col-lg-2 d-flex align-items-center">
-                  <p className="itemCount">Total Items: {games.length}</p>
+                  <p className="itemCount">Total Items: {bag.length}</p>
                 </div>
                 <div className="col-lg-10 d-flex justify-content-end">
                   <div className="payment">
@@ -71,4 +80,4 @@ function Bag({ games, reference }) {
   )
 }
 
-export default Bag
+export default Bag;
