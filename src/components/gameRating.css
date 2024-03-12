@@ -6,3 +6,15 @@
 .gameCard .gameRating i {
     margin-left: 2px;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens narrower than 768px */
+}
+
+@media screen and (max-width: 580px) {
+    .gameCard .gameRating {
+        font-size: 0.7rem;
+     
+    }
+}

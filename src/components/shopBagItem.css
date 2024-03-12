@@ -25,3 +25,17 @@
     object-position: center;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 580px) {
+    .shopBagItem a {
+        font-size: 1rem;
+    }
+    .shopBagItem td, .shopBagItem th {
+    
+        font-size: 0.9rem;
+    }
+    .itemCount {
+        font-size: 1rem;
+    }
+}

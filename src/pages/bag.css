@@ -42,3 +42,28 @@
         -5px -5px 15px rgba(255, 255, 255, 0.1),
         5px 5px 15px rgba(0, 0, 0, 0.35);
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens narrower than 768px */
+}
+
+@media screen and (max-width: 580px) {
+    .shopBagTable {
+        margin-top: 20px;
+    }
+    .shopBagTable thead tr th {
+        font-size: 15px;
+    }
+
+  
+
+    .payment {
+       
+        gap: 20px;
+        font-size: 0.9rem;
+       
+    }
+   
+    
+}

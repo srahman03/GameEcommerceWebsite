@@ -112,3 +112,38 @@
 .gameCard .addBag:hover {
     background: var(--primary);
 }
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens narrower than 768px */
+}
+
+@media screen and (max-width: 580px) {
+    .gameCard .gameTitle {
+        font-size: 1rem;
+    }
+    
+.gameCard .gameType {
+  
+    padding: 5px 5px;
+    font-size: 10px;
+}
+
+.gameCard .discount {
+  
+    font-size: 0.8rem;
+    
+}
+
+.gameCard .prevPrice {
+  
+    text-decoration-thickness: 2px;
+    font-size: 0.6rem;
+}
+
+.gameCard .gamePrice {
+    font-size: 1rem;
+}
+    
+}

@@ -93,3 +93,53 @@ header {
     text-decoration: none;
     font-size: 0.6rem;
 }
+
+@media screen and (max-width: 1320px) {
+    .menu {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+
+@media screen and (max-width: 580px) {
+    .userItems {
+        gap: 10px;
+    }
+    .userItems .icon {
+        width: 35px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .userItems .icon .like,
+    .userItems .icon .bag 
+    {
+        height: 15px;
+        width: 15px;
+        padding: 5px;
+        
+    }
+    .menu {
+        font-size: 1.3rem;
+        
+    }
+    header{
+        padding: 20px 12px;
+    }
+    .userItems .avatar .user span {
+        font-size: 0.5rem;
+    }
+    
+    .userItems .avatar .user a {
+        font-size: 0.4rem;
+    }
+
+    .userItems .avatar {
+        width: 100px;
+        padding: 0;
+    }
+    
+}

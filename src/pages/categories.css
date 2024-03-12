@@ -52,3 +52,30 @@
 .search input::placeholder {
     color: #9c9c9c;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens narrower than 768px */
+}
+
+@media screen and (max-width: 580px) {
+    .filters {
+        margin: 0;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .filters li {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .search {
+        width: 80%;
+        height: 40px;
+        gap: 5px;
+        padding: 5px 5px;
+    }
+    .search input {
+      
+        font-size: 1rem;
+    }
+}

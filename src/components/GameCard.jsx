@@ -36,12 +36,18 @@ function GameCard({ game }) {
     localStorage.setItem('library', JSON.stringify(updatedLibrary));
   };
 
+  
   const handleAddtoBag = (event, game) => {
     event.preventDefault();
-    const updatedBag = [...bag, game];
-    setBag(updatedBag);
-    localStorage.setItem('bag', JSON.stringify(updatedBag)); // Save to local storage
+    // Check if the game is already in the bag
+    const isAlreadyInBag = bag.some(item => item._id === game._id);
+    if (!isAlreadyInBag) {
+      const updatedBag = [...bag, game];
+      setBag(updatedBag);
+      localStorage.setItem('bag', JSON.stringify(updatedBag)); // Save to local storage
+    }
   };
+  
   
 
   return (

@@ -60,3 +60,22 @@ section.active {
     overflow-y: visible;
     opacity: 1;
 }
+
+@media screen and (max-width: 1320px) {
+  
+    section.active {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+   main{
+    padding: 5px;
+    gap: 15px;
+   }
+   section{
+    padding: 0;
+   }
+
+}

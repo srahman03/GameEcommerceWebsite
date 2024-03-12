@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import App, { AppContext } from '../App';
+import { AppContext } from '../App';
 import './main.css';
 import SideMenu from '../components/SideMenu';
 import Header from './Header';
@@ -10,7 +10,7 @@ import Bag from './Bag'
 
 function Main() {
   const{library, bag} = useContext(AppContext);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const [games, setGames] = useState([]);
 
   const homeRef = useRef();
