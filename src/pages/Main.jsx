@@ -56,15 +56,14 @@ function Main() {
   };
 
   const fetchData = () => {
-    fetch('http://localhost:3000/api/gamesData.json')
+    fetch('/api/gamesData.json') // Adjusted URL to fetch from the public/api folder
       .then(res => res.json())
       .then(data => {
         setGames(data);
-
       })
       .catch(e => console.log(e.message));
   };
-
+  
   useEffect(() => {
     fetchData();
   }, []);
