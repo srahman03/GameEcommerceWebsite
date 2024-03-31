@@ -67,3 +67,15 @@
    
     
 }
+
+@media (orientation: landscape) and (max-height: 750px) {
+    .shopBagTable thead tr {
+        font-size: 1rem;
+    }
+    .payment {
+        font-size: 1rem;
+    }
+    .itemCount {
+        font-size: 1rem;
+    } 
+}

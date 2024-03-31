@@ -9,7 +9,7 @@ function Categories({ games, reference }) {
   const [filters, setFilters] = useState(filterListData);
 
   useEffect(() => {
-    setData(games); // Set initial data to all games when component mounts
+    setData(games); 
   }, [games]);
 
   const handleFilterGames = (category) => {

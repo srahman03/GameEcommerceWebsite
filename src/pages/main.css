@@ -79,3 +79,8 @@ section.active {
    }
 
 }
+@media (orientation: landscape) and (max-height: 750px) {
+    main {
+      padding: 5px;  
+    }
+}

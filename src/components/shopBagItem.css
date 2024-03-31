@@ -39,3 +39,11 @@
         font-size: 1rem;
     }
 }
+@media (orientation: landscape) and (max-height: 750px) {
+    .shopBagItem td, .shopBagItem th {
+        font-size: 1rem;
+    }
+    .shopBagItem a {
+        font-size: 1.3rem;
+    }
+}

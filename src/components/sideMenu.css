@@ -137,3 +137,23 @@
     }
     
 }
+
+
+@media (orientation: landscape) and (max-height: 750px) {
+    .sideMenu .social {
+        display: none;
+    }
+    .sideMenu .logo {
+        font-size: 1.4rem;
+    }
+    .sideMenu .nav {
+        gap: 0;
+    }
+    .sideMenu.active .nav li a {
+        font-size: 1.2rem;
+    }
+    .sideMenu .social {
+        display: none;
+    }
+    
+}
