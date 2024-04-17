@@ -18,7 +18,7 @@ function Home({ games, reference }) {
           </div>
         </div>
         <div className="row">
-          {gamesOnPromotion.slice(0, 15).map(game => (
+          {gamesOnPromotion.slice(0, gamesOnPromotion.length).map(game => (
             <GameCard key={game._id} game={game} />
           ))}
         </div>
