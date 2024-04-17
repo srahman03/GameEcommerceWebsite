@@ -3,11 +3,13 @@ import { SwiperSlide } from 'swiper/react';
 
 function GameSlide({ game, index, activeVideoIndex, handleToggleVideo }) {
   
+  // Function to handle play button click, toggles video based on index
   const handlePlayClick = useCallback(() => {
     handleToggleVideo(index);
   }, [handleToggleVideo, index]);
 
   return (
+    // Using SwiperSlide component for the slide
     <SwiperSlide>
       <div className="gameSlider">
         <img src={game.img} alt="Game Image" />

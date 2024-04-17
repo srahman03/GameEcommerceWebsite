@@ -4,17 +4,21 @@ import navListData from '../data/navListData'
 import NavListItem from './NavListItem'
 
 function SideMenu({ active, sectionActive }) {
+  // State to manage navigation data
   const [navData, setNavData] = useState(navListData)
 
-
+// Function to handle navigation item click
   const handleNavOnClick = (id, target) => {
  
+    // Updating the active state of navigation items
     const newNavData = navData.map(nav => {
       nav.active = false;
       if (nav._id === id) nav.active = true;
       return nav;
     });
+    // Setting the updated navigation data
     setNavData(newNavData);
+    // Calling the sectionActive function passed as prop
     sectionActive(target);
   };
   return (

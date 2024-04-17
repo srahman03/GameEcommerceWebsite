@@ -15,13 +15,11 @@ function App() {
   const [bag, setBag] = useState([]);
 
   useEffect(() => {
-    // Simulate loading delay (replace with actual loading logic)
+   
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 2000); // Change the timeout as needed
-
-    // Cleanup timeout on unmount (optional, but not necessary)
-    // return () => clearTimeout(timeout);
+     return () => clearTimeout(timeout);
   }, []);
 
   return (

@@ -4,22 +4,24 @@ import GameRating from './GameRating';
 import { AppContext } from '../App';
 
 function GameCard({ game }) {
+  // Accessing state and context
   const { library, setLibrary, bag, setBag } = useContext(AppContext);
+  // State to track whether the game is liked
   const [isLiked, setIsLiked] = useState(false);
-
+ // Effect to retrieve library data from local storage when component mounts
   useEffect(() => {
-    // Retrieve library data from local storage when component mounts
     const storedLibrary = JSON.parse(localStorage.getItem('library'));
     if (storedLibrary) {
       setLibrary(storedLibrary);
     }
   }, [setLibrary]);
 
+// Effect to update the liked state based on whether the game is in the library
   useEffect(() => {
-    // Update the liked state based on whether the game is in the library
     setIsLiked(library.some(item => item._id === game._id));
   }, [library, game._id]);
 
+  // Function to add a game to the library
   const handleAddToLibrary = (game) => {
     const updatedLibrary = [...library, game];
     setLibrary(updatedLibrary);
@@ -28,6 +30,7 @@ function GameCard({ game }) {
     localStorage.setItem('library', JSON.stringify(updatedLibrary));
   };
 
+  // Function to remove a game from the library
   const handleRemoveFromLibrary = (game) => {
     const updatedLibrary = library.filter(item => item._id !== game._id);
     setLibrary(updatedLibrary);
@@ -36,7 +39,7 @@ function GameCard({ game }) {
     localStorage.setItem('library', JSON.stringify(updatedLibrary));
   };
 
-  
+  // Function to add a game to the bag
   const handleAddtoBag = (event, game) => {
     event.preventDefault();
     // Check if the game is already in the bag

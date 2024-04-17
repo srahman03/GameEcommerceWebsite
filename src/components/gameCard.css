@@ -59,10 +59,11 @@
 
 .gameCard .gameTitle {
     margin-top: 10px;
-    font-family: 'Bauhaus 93';
+    font-family: "Alfa Slab One", serif;
     text-transform: uppercase;
-    font-size: 1.3rem;
-    color: #ffffff;
+    font-size: 1rem;
+    color: #edebeb;
+    letter-spacing: 1px;
 }
 
 .gameCard .gamePrice {
@@ -119,7 +120,7 @@
     /* Styles for screens narrower than 768px */
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 450px) {
     .gameCard .gameTitle {
         font-size: 1rem;
     }
